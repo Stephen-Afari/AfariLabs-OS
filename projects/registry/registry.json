@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "schema": {
+    "status_values": ["ACTIVE", "COMPLETED", "PILOT", "ARCHIVED"],
+    "status_definitions": {
+      "ACTIVE": "Currently in delivery under AfariLabs-OS governance, lifecycle in progress.",
+      "COMPLETED": "Delivered through its full lifecycle (or, for a project predating AfariLabs-OS, delivered and closed) and retained in the portfolio.",
+      "PILOT": "The project currently validating AfariLabs-OS itself by being run through the complete lifecycle for the first time.",
+      "ARCHIVED": "No longer active or maintained; retained for historical/reference purposes only."
+    },
+    "field_definitions": {
+      "project_id": "Unique, kebab-case identifier. Primary key.",
+      "name": "Display name.",
+      "status": "One of status_values above.",
+      "classification": "Free-text project category, e.g. 'Reference Project', 'Internal AfariLabs Product', 'Client Engagement'. Not a closed enum — the specification does not define a fixed list.",
+      "description": "Short, factual description. Must not state anything not verifiable from the OS specification or the project's own repository.",
+      "owner": "Person or role accountable for the project. Null if not assigned/recorded.",
+      "repository": "Name of the execution-plane repository holding the implementation, if any. Null if none exists yet.",
+      "created_date": "ISO 8601 date the project was registered or started. Null if not recorded.",
+      "technology": "Array of technologies actually used/confirmed. Null if not yet known or not documented — never inferred or guessed.",
+      "capabilities_used": "Array of capability area(s) from capabilities/ (automation, application, ai, experience, security, client-success, delivery) actually engaged. Null if none yet.",
+      "lifecycle_stage": "Current stage per the 15-stage lifecycle (DISCOVER..LEARN, see CLAUDE.md), or null if not started. Use 'N/A' with a note for a project that predates AfariLabs-OS and is not being tracked retroactively through the lifecycle.",
+      "security_status": "Status of the Security Review gate for this project. Null/'Not reviewed' if not yet reached.",
+      "evaluation_status": "Status of the AI Evaluation gate for this project, if applicable. Null if not applicable or not yet reached.",
+      "deployment_status": "Current deployment state (e.g. 'Not deployed', 'Deployed', 'Decommissioned'). Null if not documented.",
+      "lessons": "Array of references into knowledge/lessons/ captured from this project. Empty array if none captured yet.",
+      "patterns": "Array of references into knowledge/patterns/ this project has contributed, once validated. Empty array if none yet.",
+      "related_projects": "Array of other project_id values this project is technically or organizationally related to. Empty array if no relationship is documented."
+    }
+  },
+  "projects": [
+    {
+      "project_id": "pmraid",
+      "name": "PMRaid",
+      "status": "COMPLETED",
+      "classification": "Reference Project",
+      "description": "A completed AfariLabs project retained in the portfolio as evidence of existing capability. Used as a reference architecture, product demonstration, case study and portfolio asset. It is not the first validation pilot for AfariLabs-OS, and AfariLabs-OS was not used to build it — this must not be claimed otherwise. (Spec Section 20)",
+      "owner": null,
+      "repository": "AfariLabs-PMRaid",
+      "created_date": null,
+      "technology": null,
+      "capabilities_used": null,
+      "lifecycle_stage": "N/A — completed prior to AfariLabs-OS; not tracked retroactively through the OS lifecycle",
+      "security_status": null,
+      "evaluation_status": null,
+      "deployment_status": null,
+      "lessons": [],
+      "patterns": [],
+      "related_projects": []
+    },
+    {
+      "project_id": "desta-cold-store",
+      "name": "Desta Cold Store Project",
+      "status": "PILOT",
+      "classification": "Internal AfariLabs Product",
+      "description": "The first internal AfariLabs product to be run through the complete AfariLabs-OS lifecycle — the proving ground for the operating system. Treated as an internal AfariLabs product, not a client engagement. Not yet started; its application and repository must not be built ahead of actual lifecycle work. (Spec Sections 20-22)",
+      "owner": null,
+      "repository": "AfariLabs-Desta-Cold-Store",
+      "created_date": null,
+      "technology": null,
+      "capabilities_used": null,
+      "lifecycle_stage": null,
+      "security_status": null,
+      "evaluation_status": null,
+      "deployment_status": "Not deployed",
+      "lessons": [],
+      "patterns": [],
+      "related_projects": []
+    }
+  ]
+}

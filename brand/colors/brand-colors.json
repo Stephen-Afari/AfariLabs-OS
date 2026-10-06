@@ -1,0 +1,38 @@
+{
+  "brand_name": "AfariLabs",
+  "legacy_brand_name": "ProjectIQ",
+  "tagline": "Transforming Project Delivery Through AI",
+  "positioning": "Helping project-driven organizations transform delivery through AI, automation and intelligent systems.",
+  "brand_pillars": [
+    "Intelligence",
+    "Automation",
+    "Excellence"
+  ],
+  "principal": {
+    "name": "Stephen Afari",
+    "credentials": [
+      "PMP",
+      "DipFM",
+      "MBA"
+    ],
+    "display_name": "Stephen Afari, PMP, DipFM, MBA",
+    "title": "Founder & Managing Director",
+    "secondary_title": "AI Transformation Consultant",
+    "phone": "+233 542351971",
+    "email": "demorganafari@gmail.com",
+    "location": "Accra, Ghana"
+  },
+  "colour_palette": {
+    "deep_navy": "#0D1B3D",
+    "bright_cyan": "#00B6D1",
+    "soft_mint": "#C6F3E6",
+    "coral_accent": "#FF7A59",
+    "light_neutral": "#F2F4F7",
+    "white": "#FFFFFF"
+  },
+  "typography": {
+    "primary": "Manrope Bold",
+    "secondary": "Manrope Regular",
+    "fallback": "Arial"
+  }
+}

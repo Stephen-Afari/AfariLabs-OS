@@ -1,0 +1,29 @@
+# Secrets and environment files — never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*secret*
+*credential*
+
+# Dependency directories
+node_modules/
+.venv/
+venv/
+__pycache__/
+
+# Build output
+dist/
+build/
+*.log
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Local override of Claude Code settings (machine-specific)
+.claude/settings/*.local.json

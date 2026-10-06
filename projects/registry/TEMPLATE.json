@@ -1,0 +1,19 @@
+{
+  "project_id": "",
+  "name": "",
+  "status": "",
+  "classification": "",
+  "description": "",
+  "owner": null,
+  "repository": null,
+  "created_date": null,
+  "technology": null,
+  "capabilities_used": null,
+  "lifecycle_stage": null,
+  "security_status": null,
+  "evaluation_status": null,
+  "deployment_status": null,
+  "lessons": [],
+  "patterns": [],
+  "related_projects": []
+}
